@@ -1,0 +1,51 @@
+<!--
+	"Zoomable Circle Packing & Bar Graph Visualization of Skyrim Data"
+
+    Author: Ben Baysinger
+	Author: Jake Dame
+
+    Date: 2024-08-02
+	
+	Course: CS 6017: Data Analytics & Visualization
+ 	Instructor: Dr. Ben Jones
+
+	Data sourced from: https://github.com/muhajipra/scrapeskyrimwiki/tree/main
+	Original data from: https://en.uesp.net
+
+	Circle packing based in part on: https://observablehq.com/@d3/zoomable-circle-packing
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Skyrim Visualization </title>
+		<link rel="icon" type="image/png" href="resources/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="Skyrim.css"/>
+		<script defer type="module" src="Skyrim.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="barDiv">
+				<div id="title"></div>
+				<div id="barTitle"></div>
+				<div id="barGraph"></div>
+			</div>
+			<div id="circlePack"> </div>
+			<div id="buttons">
+				<div id="groupingButtons">
+					<button id="btn_race">Race</button>     
+					<button id="btn_class">Class</button>     
+					<button id="btn_skill">Skill</button>     
+					<button id="btn_aggression">Aggression</button>     
+					<button id="btn_morality">Morality</button>
+				  </div>
+				  <div id="statsButtons">
+					<button id="btn_health">Health</button>
+					<button id="btn_magicka">Magicka</button>
+					<button id="btn_stamina">Stamina</button>
+				  </div>
+			</div>
+		</div>
+	</body>
+</html>
